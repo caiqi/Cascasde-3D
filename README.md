@@ -10,30 +10,27 @@ We designed a 3D object detection model on point clouds by:
 * Analyzing the sparsity of the point clouds use point completeness score to re-weighting training samples.
 Following is detection results on Waymo Open Dataset.
 <p align="center">
-  <img src="figures/waymo_scene_1.gif" width="20%" height="20%">
-  <img src="figures/waymo_scene_2.gif" width="20%" height="20%">
-  <img src="figures/waymo_scene_3.gif" width="20%" height="20%">
-</p>
-<p align="center">
-  <img src="figures/waymo_scene_4.gif" width="20%" height="20%">
-  <img src="figures/waymo_scene_5.gif" width="20%" height="20%">
-  <img src="figures/waymo_scene_6.gif" width="20%" height="20%">
+  <img src="figures/waymo_scene_1.gif" width="15%" height="15%">
+  <img src="figures/waymo_scene_2.gif" width="15%" height="15%">
+  <img src="figures/waymo_scene_3.gif" width="15%" height="15%">
+  <img src="figures/waymo_scene_4.gif" width="15%" height="15%">
+  <img src="figures/waymo_scene_5.gif" width="15%" height="15%">
 </p>
 
 ## Results on KITTI
 
 |       | Easy Car | Moderate Car | Hard Car |
-| ----- | -------: | :----------: | :------: |
-| AP 11 |    90.05 |    86.02     |  79.27   |
-| AP 40 |    93.20 |    86.19     |  83.48   |
+| ----- | :------: | :----------: | :------: |
+| AP 11 |  90.05   |    86.02     |  79.27   |
+| AP 40 |  93.20   |    86.19     |  83.48   |
 
 
 ## Results on Waymo
 
 |               | Overall Vehicle | 0-30m Vehicle | 30-50m Vehicle | 50m-Inf Vehicle |
-| ------------- | --------------: | :-----------: | :------------: | :-------------: |
-| *LEVEL_1 mAP* |           76.27 |     92.66     |     74.99      |      54.49      |
-| *LEVEL_2 mAP* |           67.12 |     91.95     |     68.96      |      41.82      |
+| ------------- | :-------------: | :-----------: | :------------: | :-------------: |
+| *LEVEL_1 mAP* |      76.27      |     92.66     |     74.99      |      54.49      |
+| *LEVEL_2 mAP* |      67.12      |     91.95     |     68.96      |      41.82      |
 
 ## Installation
 1.  Requirements. 
@@ -87,6 +84,7 @@ cd tools
 sh scripts/3d-cascade-rcnn_test.sh
 ```
 The evaluation results should be like: 
+<pre>
 ```
 2021-08-10 14:06:14,608   INFO  Car AP@0.70, 0.70, 0.70:
 bbox AP:97.9644, 90.1199, 89.7076
@@ -108,7 +106,7 @@ bbox AP:99.1663, 95.8055, 93.3149
 bev  AP:99.1943, 97.8180, 95.5420
 3d   AP:99.1717, 95.8046, 95.4500
 aos  AP:99.13, 95.65, 93.03
-```
+```</pre>
 
 ## Acknowledge
 The code is built on [`OpenPCDet`](https://github.com/open-mmlab/OpenPCDet) and [`Voxel R-CNN`](https://github.com/djiajunustc/Voxel-R-CNN).
