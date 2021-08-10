@@ -7,7 +7,7 @@ This is the implementation of **3D Cascade RCNN: High Quality Object Detection i
 
 We designed a 3D object detection model on point clouds by:
 * Presenting a simple yet effective 3D cascade architecture
-* Analyzing the sparsity of the point clouds use point completeness score to re-weighting training samples.
+* Analyzing the sparsity of the point clouds and using point completeness score to re-weighting training samples.
 Following is detection results on Waymo Open Dataset.
 <p align="center">
   <img src="figures/waymo_scene_1.gif" width="15%" height="15%">
