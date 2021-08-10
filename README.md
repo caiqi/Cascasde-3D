@@ -84,7 +84,6 @@ cd tools
 sh scripts/3d-cascade-rcnn_test.sh
 ```
 The evaluation results should be like: 
-```
     2021-08-10 14:06:14,608   INFO  Car AP@0.70, 0.70, 0.70:
     bbox AP:97.9644, 90.1199, 89.7076
     bev  AP:90.6405, 89.0829, 88.4391
@@ -105,7 +104,6 @@ The evaluation results should be like:
     bev  AP:99.1943, 97.8180, 95.5420
     3d   AP:99.1717, 95.8046, 95.4500
     aos  AP:99.13, 95.65, 93.03
-```
 
 ## Acknowledge
 The code is built on [`OpenPCDet`](https://github.com/open-mmlab/OpenPCDet) and [`Voxel R-CNN`](https://github.com/djiajunustc/Voxel-R-CNN).
