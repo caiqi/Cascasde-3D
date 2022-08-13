@@ -107,5 +107,17 @@ bev  AP:99.1943, 97.8180, 95.5420
 aos  AP:99.13, 95.65, 93.03
 ```
 
+## Citation
+```
+@article{cascade3d,
+  title={3D Cascade RCNN: High Quality Object Detection in Point Clouds},
+  author={Cai, Qi and Pan, Yingwei and Yao, Ting and Mei, Tao},
+  journal={IEEE Transactions on Image Processing},
+  year={2022},
+  publisher={IEEE}
+}
+```
+
+
 ## Acknowledge
 The code is built on [`OpenPCDet`](https://github.com/open-mmlab/OpenPCDet) and [`Voxel R-CNN`](https://github.com/djiajunustc/Voxel-R-CNN).
